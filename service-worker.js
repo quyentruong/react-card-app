@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/quyentruong/react-card-app/precache-manifest.c054c501648fc056703f53fa21edbe65.js"
+  "/react-card-app/precache-manifest.9e70dbf453fcef22a893de7145c6932d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/quyentruong/react-card-app/index.html", {
+workbox.routing.registerNavigationRoute("/react-card-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
