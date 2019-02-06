@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "be9675da8c35fad3ef8a",
+    "revision": "dcdf0568da9a98e4003a",
     "url": "/react-card-app/static/css/main.6d70fef4.chunk.css"
   },
   {
-    "revision": "be9675da8c35fad3ef8a",
-    "url": "/react-card-app/static/js/main.be9675da.chunk.js"
+    "revision": "dcdf0568da9a98e4003a",
+    "url": "/react-card-app/static/js/main.dcdf0568.chunk.js"
   },
   {
-    "revision": "3ce0bd3957e2db520f77",
+    "revision": "9c28120fbedf8d7bb8bc",
     "url": "/react-card-app/static/css/1.0586e7ef.chunk.css"
   },
   {
-    "revision": "3ce0bd3957e2db520f77",
-    "url": "/react-card-app/static/js/1.3ce0bd39.chunk.js"
+    "revision": "9c28120fbedf8d7bb8bc",
+    "url": "/react-card-app/static/js/1.9c28120f.chunk.js"
   },
   {
     "revision": "3dc32df03142ba6a4c8c",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/react-card-app/static/media/fa-regular-400.304f31f4.svg"
   },
   {
-    "revision": "9a52a4e971938c52d6c541b9bf3dc2ec",
-    "url": "/react-card-app/static/media/fa-solid-900.9a52a4e9.eot"
-  },
-  {
     "revision": "20c189aa192501e4ec907d5f84e8fbb1",
     "url": "/react-card-app/static/media/fa-solid-900.20c189aa.ttf"
+  },
+  {
+    "revision": "9a52a4e971938c52d6c541b9bf3dc2ec",
+    "url": "/react-card-app/static/media/fa-solid-900.9a52a4e9.eot"
   },
   {
     "revision": "e4fed0a589f7130c6ef834a029854646",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/react-card-app/static/media/fa-solid-900.c8ea4c79.svg"
   },
   {
-    "revision": "80b6d49b8a220df2ccd3d8cf27deecc5",
+    "revision": "a8cf50c9d106687809ecacc86cf309bb",
     "url": "/react-card-app/index.html"
   }
 ];
