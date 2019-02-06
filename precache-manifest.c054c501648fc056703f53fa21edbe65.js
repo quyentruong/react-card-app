@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/quyentruong/react-card-app/static/media/fa-regular-400.304f31f4.svg"
   },
   {
-    "revision": "9a52a4e971938c52d6c541b9bf3dc2ec",
-    "url": "/quyentruong/react-card-app/static/media/fa-solid-900.9a52a4e9.eot"
-  },
-  {
     "revision": "20c189aa192501e4ec907d5f84e8fbb1",
     "url": "/quyentruong/react-card-app/static/media/fa-solid-900.20c189aa.ttf"
+  },
+  {
+    "revision": "9a52a4e971938c52d6c541b9bf3dc2ec",
+    "url": "/quyentruong/react-card-app/static/media/fa-solid-900.9a52a4e9.eot"
   },
   {
     "revision": "e4fed0a589f7130c6ef834a029854646",
