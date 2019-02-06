@@ -29,11 +29,9 @@ const Header = () => {
     </li>
   ));
   return (
-    <div>
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <ul className="nav navbar-nav">{showMenu}</ul>
-      </nav>
-    </div>
+    <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <ul className="nav navbar-nav">{showMenu}</ul>
+    </nav>
   );
 };
 

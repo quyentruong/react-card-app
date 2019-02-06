@@ -13,8 +13,8 @@ class CardRow extends Component {
   render() {
     const state = { ...this.state };
     const elements = state.temp.map(e => {
-      let result = '';
-      if (e.title !== '' && e.text !== '') {
+      let result = null;
+      if (e.title !== null && e.text !== null) {
         result = <Card key={e.id} icon={e.icon} title={e.title} text={e.text} link={e.link} />;
       }
       return result;

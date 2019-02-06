@@ -8,16 +8,17 @@ class MakeChange extends Component {
     this.moneyRef = React.createRef();
   }
 
-  MakeChange = () => {
+  handleClick = () => {
+    const output = $('#result');
     const money = this.moneyRef.current.value;
     const regex = /^-?\d*\.?\d+$/;
 
     if (!regex.test(money)) {
-      $('#result').html(`${money} is not a number.`);
+      output.html(`${money} is not a number.`);
       return;
     }
     if (money <= 0) {
-      $('#result').html(`${money} is not a positive number.`);
+      output.html(`${money} is not a positive number.`);
       return;
     }
 
@@ -30,14 +31,14 @@ class MakeChange extends Component {
 
     let remainder = Math.round(100 * money);
     let result = '';
-    for (let i = 0; i < Object.keys(coin).length; i++) {
+    for (let i = 0; i < Object.keys(coin).length; i += 1) {
       const temp = Object.keys(coin)[i];
       const quotient = Math.floor(remainder / coin[temp]);
       if (quotient !== 0) result += `${temp}: ${quotient}</br>`;
       remainder %= coin[temp];
       if (remainder === 0) break;
     }
-    $('#result').html(result);
+    output.html(result);
   };
 
   render() {
@@ -47,16 +48,16 @@ class MakeChange extends Component {
           <h3 className="display-4">Make Change</h3>
           <div className="form-group">
             <label>
-              Amount of money <img src={logo} alt="coin"/>
+              Amount of money <img src={logo} alt="coin" />
             </label>
-            <input className="form-control" type="text" ref={this.moneyRef} placeholder="456.17"/>
+            <input className="form-control" type="text" ref={this.moneyRef} placeholder="456.17" />
           </div>
-          <button type="button" className="btn btn-success" onClick={this.MakeChange}>
+          <button type="button" className="btn btn-success" onClick={this.handleClick}>
             Convert
           </button>
-          <br/>
-          <br/>
-          <div id="result" className="display-6 alert-success box"/>
+          <br />
+          <br />
+          <div id="result" className="display-6 alert-success box" />
         </div>
       </div>
     );
