@@ -11,6 +11,7 @@ const App = () => {
     <Router history={history} basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header />
+        <br />
         <RouteManager />
       </div>
     </Router>

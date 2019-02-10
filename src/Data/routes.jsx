@@ -2,8 +2,9 @@ import React from 'react';
 import Home from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import MakeChange from '../components/MakeChange';
 import NotFound from '../components/NotFound';
+import MakeChange from '../components/CardDesk/MakeChange';
+import CollatzConjecture from '../components/CardDesk/CollatzConjecture';
 
 const routes = [
   {
@@ -23,8 +24,13 @@ const routes = [
   },
   {
     path: '/makechange',
-    exact: false,
+    exact: true,
     main: () => <MakeChange />,
+  },
+  {
+    path: '/collatzconjecture',
+    exact: true,
+    main: () => <CollatzConjecture />,
   },
   {
     path: '',

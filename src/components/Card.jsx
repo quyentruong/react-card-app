@@ -1,31 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import TimeAgo from 'react-timeago';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 
-const Card = ({ icon, title, text, link }) => (
-  <div className="col-4">
-    <div className="card">
-      <div className="card-body">
-        <h4 className="card-title">
-          <i className={icon}> {title}</i>
-        </h4>
+class Card extends Component {
+  constructor(props) {
+    super(props);
+    this.temp = props.temp;
+  }
 
-        <p className="card-text">{text}</p>
+  render() {
+    return (
+      <div className="card">
+        <div className="card-body">
+          <h4 className="card-title">
+            {this.temp.icon} {this.temp.title}
+          </h4>
+          <p className="card-text">{this.temp.text}</p>
+          <div className="text-center">
+            <NavLink to={this.temp.link}>
+              <FaArrowAltCircleRight />
+              <b> Click here</b>
+            </NavLink>
+          </div>
+          <p className="card-text">
+            <small className="text-muted">
+              Last updated <TimeAgo date={this.temp.updated} />
+            </small>
+          </p>
+        </div>
       </div>
-
-      <div className="card-body">
-        <NavLink to={link}>
-          <i className="fas fa-arrow-alt-circle-right"> Click here</i>
-        </NavLink>
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 Card.propTypes = {
-  icon: PropTypes.string,
-  title: PropTypes.string,
-  text: PropTypes.string,
-  link: PropTypes.string,
+  temp: PropTypes.instanceOf(Object),
 };
+
 export default Card;

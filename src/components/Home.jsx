@@ -6,13 +6,13 @@ const Home = () => {
   let temp = [{}, {}, {}];
   const cardRow = [];
   for (let index = 0; index < cards.length; index += 1) {
-    temp[index % 3].id = cards[index].id;
-    temp[index % 3].title = cards[index].title;
-    temp[index % 3].text = cards[index].text;
-    temp[index % 3].icon = cards[index].icon;
-    temp[index % 3].link = cards[index].link;
+    const card = cards[index];
+    for (let i = 0; i < Object.keys(card).length; i += 1) {
+      const key = Object.keys(card)[i];
+      temp[index % 3][key] = card[key];
+    }
     if (index % 3 === 2) {
-      cardRow.push(<CardRow key={cards[index].id / 3} temp={temp} />);
+      cardRow.push(<CardRow key={card.id / 3} temp={temp} />);
       temp = [{}, {}, {}];
     }
     if (index % 3 === 0) {

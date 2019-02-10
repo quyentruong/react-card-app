@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import Card from './Card';
 
 class CardRow extends Component {
@@ -15,11 +16,16 @@ class CardRow extends Component {
     const elements = state.temp.map(e => {
       let result = null;
       if (e.title !== null && e.text !== null) {
-        result = <Card key={e.id} icon={e.icon} title={e.title} text={e.text} link={e.link} />;
+        e.link = `/${e.title.toLowerCase().replace(' ', '')}`;
+        result = <Card key={e.id} temp={e} />;
       }
       return result;
     });
-    return <div className="row">{elements}</div>;
+    return (
+      <div>
+        <div className="card-deck">{elements}</div> <br />
+      </div>
+    );
   }
 }
 
