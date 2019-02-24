@@ -1,15 +1,13 @@
 {
-  "main.css": "/react-card-app/static/css/main.5be2e90f.chunk.css",
-  "main.js": "/react-card-app/static/js/main.c7aea284.chunk.js",
-  "main.js.map": "/react-card-app/static/js/main.c7aea284.chunk.js.map",
-  "static/css/1.0de702a2.chunk.css": "/react-card-app/static/css/1.0de702a2.chunk.css",
-  "static/js/1.65b7c1e5.chunk.js": "/react-card-app/static/js/1.65b7c1e5.chunk.js",
-  "static/js/1.65b7c1e5.chunk.js.map": "/react-card-app/static/js/1.65b7c1e5.chunk.js.map",
+  "main.css": "/react-card-app/static/css/main.200ea79f.chunk.css",
+  "main.js": "/react-card-app/static/js/main.b72a7682.chunk.js",
+  "main.js.map": "/react-card-app/static/js/main.b72a7682.chunk.js.map",
+  "static/js/1.02630f20.chunk.js": "/react-card-app/static/js/1.02630f20.chunk.js",
+  "static/js/1.02630f20.chunk.js.map": "/react-card-app/static/js/1.02630f20.chunk.js.map",
   "runtime~main.js": "/react-card-app/static/js/runtime~main.3dc32df0.js",
   "runtime~main.js.map": "/react-card-app/static/js/runtime~main.3dc32df0.js.map",
-  "static/css/main.5be2e90f.chunk.css.map": "/react-card-app/static/css/main.5be2e90f.chunk.css.map",
-  "static/css/1.0de702a2.chunk.css.map": "/react-card-app/static/css/1.0de702a2.chunk.css.map",
+  "static/css/main.200ea79f.chunk.css.map": "/react-card-app/static/css/main.200ea79f.chunk.css.map",
   "index.html": "/react-card-app/index.html",
-  "precache-manifest.854246b07c09b57f3dd9bf0b55c49e24.js": "/react-card-app/precache-manifest.854246b07c09b57f3dd9bf0b55c49e24.js",
+  "precache-manifest.24ff49ed18d8a297a8141e5176eb30ea.js": "/react-card-app/precache-manifest.24ff49ed18d8a297a8141e5176eb30ea.js",
   "service-worker.js": "/react-card-app/service-worker.js"
 }
