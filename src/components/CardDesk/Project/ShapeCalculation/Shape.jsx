@@ -5,9 +5,6 @@ import ShapeContent from './ShapeContent';
 class Shape extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      isClick: false,
-    };
     this.inputRef = React.createRef();
   }
 
@@ -54,26 +51,9 @@ class Shape extends PureComponent {
       }
     }
     this.inputRef.current.value = '';
+    const { onSelectFunction } = this.props;
 
-    this.setState({
-      isClick: true,
-      result,
-    });
-  };
-
-  showResult = () => {
-    const { isClick, result } = this.state;
-    if (isClick) {
-      return (
-        <div>
-          <h5>
-            <b>Result:</b>
-          </h5>
-          {result === -1 ? 'Input invalid' : result}
-        </div>
-      );
-    }
-    return '';
+    onSelectFunction({ isClick: true, result });
   };
 
   render() {
@@ -107,9 +87,6 @@ class Shape extends PureComponent {
             </button>
           </div>
         </div>
-
-        {this.showResult()}
-        <br />
       </div>
     );
   }
@@ -117,6 +94,7 @@ class Shape extends PureComponent {
 
 Shape.propTypes = {
   shape: PropTypes.string,
+  onSelectFunction: PropTypes.func,
 };
 
 export default Shape;

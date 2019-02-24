@@ -9,11 +9,35 @@ class ShapeCalculation extends Component {
     this.state = {
       shape: ['square', 'cube', 'cCircle', 'aCircle', 'aRect', 'fib'],
       value: 'square',
+      isClick: false,
     };
   }
 
   handleChange = event => {
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value, isClick: false });
+  };
+
+  handleSelectFunction = value => {
+    const { isClick, result } = value;
+    this.setState({
+      isClick,
+      result,
+    });
+  };
+
+  showResult = () => {
+    const { isClick, result } = this.state;
+    if (isClick) {
+      return (
+        <div>
+          <h5>
+            <b>Result:</b>
+          </h5>
+          {result === -1 ? 'Input invalid' : result}
+        </div>
+      );
+    }
+    return '';
   };
 
   render() {
@@ -35,7 +59,8 @@ class ShapeCalculation extends Component {
             </select>
           </div>
         </div>
-        <Shape shape={{ ...this.state }.value} />
+        <Shape shape={{ ...this.state }.value} onSelectFunction={this.handleSelectFunction} />
+        {this.showResult()}
       </div>
     );
   }
