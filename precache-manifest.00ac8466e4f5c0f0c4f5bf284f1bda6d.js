@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b72a76826a0355a7fd3e",
+    "revision": "613b72d03decef033639",
     "url": "/react-card-app/static/css/main.200ea79f.chunk.css"
   },
   {
-    "revision": "b72a76826a0355a7fd3e",
-    "url": "/react-card-app/static/js/main.b72a7682.chunk.js"
+    "revision": "613b72d03decef033639",
+    "url": "/react-card-app/static/js/main.613b72d0.chunk.js"
   },
   {
     "revision": "02630f20bb2b96686209",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-card-app/static/js/runtime~main.3dc32df0.js"
   },
   {
-    "revision": "05ceb4309fe2403cf07744084380db87",
+    "revision": "2e5e0cda05be133bb210055ebe6c0c1b",
     "url": "/react-card-app/index.html"
   }
 ];

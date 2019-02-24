@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-card-app/precache-manifest.24ff49ed18d8a297a8141e5176eb30ea.js"
+  "/react-card-app/precache-manifest.00ac8466e4f5c0f0c4f5bf284f1bda6d.js"
 );
 
 workbox.clientsClaim();
