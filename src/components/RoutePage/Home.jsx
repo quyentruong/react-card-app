@@ -1,6 +1,6 @@
 import React from 'react';
-import CardRow from './CardRow';
-import cards from '../Data/cards';
+import CardRow from '../CardDesk/CardRow';
+import cards from '../../Data/cards';
 
 const Home = () => {
   let temp = [{}, {}, {}];

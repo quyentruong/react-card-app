@@ -8,7 +8,7 @@ import RouteManager from './components/RouteManager';
 const App = () => {
   const history = createHistory();
   return (
-    <Router history={history} basename={process.env.PUBLIC_URL}>
+    <Router history={history}>
       <div className="App">
         <Header />
         <br />

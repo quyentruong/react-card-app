@@ -1,10 +1,12 @@
 import React from 'react';
-import Home from '../components/Home';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import NotFound from '../components/NotFound';
-import MakeChange from '../components/CardDesk/MakeChange';
-import CollatzConjecture from '../components/CardDesk/CollatzConjecture';
+import Home from '../components/RoutePage/Home';
+import About from '../components/RoutePage/About';
+import Contact from '../components/RoutePage/Contact';
+import NotFound from '../components/RoutePage/NotFound';
+import MakeChange from '../components/CardDesk/Project/MakeChange';
+import CollatzConjecture from '../components/CardDesk/Project/CollatzConjecture';
+import SillyStoryGenerator from '../components/CardDesk/Project/SillyStoryGenerator';
+import ShapeCalculation from '../components/CardDesk/Project/ShapeCalculation';
 
 const routes = [
   {
@@ -23,14 +25,24 @@ const routes = [
     main: () => <Contact />,
   },
   {
-    path: '/makechange',
+    path: '/make-change',
     exact: true,
     main: () => <MakeChange />,
   },
   {
-    path: '/collatzconjecture',
+    path: '/collatz-conjecture',
     exact: true,
     main: () => <CollatzConjecture />,
+  },
+  {
+    path: '/silly-story-generator',
+    exact: true,
+    main: () => <SillyStoryGenerator />,
+  },
+  {
+    path: '/shape-calculation',
+    exact: true,
+    main: () => <ShapeCalculation />,
   },
   {
     path: '',

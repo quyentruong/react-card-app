@@ -1,4 +1,4 @@
-import { FaCoins, FaCalculator } from 'react-icons/fa';
+import { FaCoins, FaCalculator, FaBook } from 'react-icons/fa';
 import React from 'react';
 
 const cards = [
@@ -22,27 +22,29 @@ const cards = [
   },
   {
     id: 3,
-    title: null,
-    text: 's',
-    icon: 'fas fa-coins',
+    title: 'Silly Story Generator',
+    text: 'Generates a silly story when the "Generate random story" button is pressed. ',
+    icon: <FaBook />,
+    updated: 'Feb 17, 2019',
   },
   {
     id: 4,
-    title: null,
-    text: 'f',
-    icon: 'fas fa-coins',
+    title: 'Shape Calculation',
+    text: 'Include function square, cube, area of circle, area of rectangle ...',
+    icon: <FaCalculator />,
+    updated: 'Feb 23, 2019',
   },
   {
     id: 5,
-    title: null,
+    title: 'e',
     text: 's',
-    icon: 'fas fa-coins',
+    icon: <FaBook />,
   },
   {
     id: 6,
-    title: null,
+    title: 'e',
     text: 's',
-    icon: 'fas fa-coins',
+    icon: <FaBook />,
   },
 ];
 

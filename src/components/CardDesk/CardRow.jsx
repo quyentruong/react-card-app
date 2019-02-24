@@ -12,11 +12,10 @@ class CardRow extends Component {
   }
 
   render() {
-    const state = { ...this.state };
-    const elements = state.temp.map(e => {
+    const elements = { ...this.state }.temp.map(e => {
       let result = null;
       if (e.title !== null && e.text !== null) {
-        e.link = `/${e.title.toLowerCase().replace(' ', '')}`;
+        e.link = `/${e.title.toLowerCase().replace(/\s/g, '-')}`;
         result = <Card key={e.id} temp={e} />;
       }
       return result;

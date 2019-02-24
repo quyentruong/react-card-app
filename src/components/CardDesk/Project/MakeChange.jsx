@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import { FaFileCode } from 'react-icons/fa';
-import logo from '../../images/coins.png';
+import logo from '../../../static/images/coins.png';
 
 class MakeChange extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ class MakeChange extends Component {
         </button>
         <br />
         <br />
-        <div id="result" className="display-6 alert-success box" />
+        <div id="result" className="display-6 box" />
       </div>
     );
   }

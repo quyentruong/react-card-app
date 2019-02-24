@@ -68,7 +68,7 @@ class CollatzConjecture extends Component {
         </button>
         <br />
         <br />
-        <div id="result" className="display-6 alert-success box text-left" />
+        <div id="result" className="display-6 box text-left" />
       </div>
     );
   }
